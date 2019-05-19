@@ -1,0 +1,47 @@
+<%# app/views/employees/index.html.erb %>
+ <html>
+ <head>
+ <%= stylesheet_link_tag '/app/assets/stylesheets/home.scss' %>
+  <style type="text/scss"><%= yield :stylesheets %></style>
+    </head>
+    <body>
+    
+      <div>
+        <div>
+          <h3>Items</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>iteId</th>
+                <th>itemName</th>
+                <th>modelNUmber</th>
+                <th>serviceDate</th>
+                <th>brand</th>
+                <th>perchaseDate</th>
+                <th>currentHolderID</th>
+                <th>previousHolderID</th>
+             </tr>
+            </thead>
+
+            <%# app/views/admin/products/index.html.erb %>
+            <%= render @items %>
+            <tbody>
+              <% @item.each do |it| %>
+                 <tr>
+                  <td><%= it.itemId %></td>
+                  <td><%= it.itemName %> </td>
+                   <td><%= it.modelNUmber %></td>
+                   <td><%= it.serviceDate%> </td>
+                   <td><%= it.brand %> </td>
+                   <td><%= it.perchaseDate %> </td>
+                   <td><%= it.currentHolderID %> </td>
+                   <td><%= it.previousHolderID %> </td>
+                 </tr>
+              <% end %>
+            </tbody>
+          </table>
+          <br>
+        </div>
+      </div>
+    </body>
+    </html>

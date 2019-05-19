@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  empid: 1
+  phonumber: 1
+  gender: MyText
+  joining_date: 2019-05-19
+
+two:
+  name: MyText
+  empid: 1
+  phonumber: 1
+  gender: MyText
+  joining_date: 2019-05-19

@@ -1,0 +1,27 @@
+body { padding-top: 100px;
+background-color: #f55e55;
+ }
+
+ input[type=text] {
+  width: 50%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  align-items:  center;
+  background-color: #3CBC8D;
+}
+input[type=password]{
+width: 50%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  align-items:  center;
+  background-color: #3CBC8D;
+}
+ input[type="submit"] {
+  height: 40px;
+  font-size: 13px;
+  background-color: #4CAF50;
+  margin: 4px 2px;
+  width: 100px;
+}

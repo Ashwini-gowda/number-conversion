@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  empid: 1
+  from_previous_holder_date: 2019-05-19
+  to_current_holder_date: 2019-05-19
+  name: MyText
+
+two:
+  empid: 1
+  from_previous_holder_date: 2019-05-19
+  to_current_holder_date: 2019-05-19
+  name: MyText

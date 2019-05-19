@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webshop</title>
+  <%= stylesheet_link_tag 'application' %>
+  <style type="text/css"><%= yield :stylesheets %></style>
+ <%# stylesheet_link_tag "app/assets/stylesheets/application.css" %> 
+  <%# javascript_include_tag "application" %>
+  <%# csrf_meta_tags %>
+</head>
+<body>
+
+
+
+<% provide(:title, "Sign in") %>
+<h1>Sign in</h1>
+
+<div >
+  <div>
+    <%= form_tag (:action => 'login_attempt'), :method =>"post" do %>
+
+      <%= label_tag :"UserName:" %>
+      <%= text_field_tag :text, params[:text] %><br/><br/>
+      
+      <%= label_tag :"Password:" %>
+      <%= password_field_tag :password %><br/><br/>
+      <%= submit_tag "Sign in" %>
+    <% end %>
+
+  </div>
+</div>
+</body>
+</html>
